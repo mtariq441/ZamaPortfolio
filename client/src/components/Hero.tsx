@@ -35,7 +35,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Button
               size="lg"
-              className="rounded-full px-8"
+              className="rounded-full px-8 bg-accent hover:bg-accent/90 text-accent-foreground border-accent-border"
               onClick={() => scrollToSection("projects")}
               data-testid="button-view-work"
             >

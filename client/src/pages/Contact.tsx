@@ -93,9 +93,9 @@ export default function Contact() {
                 </div>
               </Card>
 
-              <Card className="p-8 bg-primary text-primary-foreground">
+              <Card className="p-8 bg-accent text-accent-foreground">
                 <h3 className="font-semibold text-lg mb-2">Quick Response</h3>
-                <p className="text-sm mb-4 text-primary-foreground/90">
+                <p className="text-sm mb-4 text-accent-foreground/90">
                   We typically respond to all inquiries within 24 hours
                 </p>
                 <Button

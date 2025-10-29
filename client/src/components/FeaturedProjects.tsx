@@ -66,6 +66,7 @@ export default function FeaturedProjects() {
                 variant={filter === f ? "default" : "outline"}
                 size="sm"
                 onClick={() => setFilter(f)}
+                className={filter === f ? "bg-accent hover:bg-accent/90 text-accent-foreground" : ""}
                 data-testid={`button-filter-${f.toLowerCase().replace(' ', '-')}`}
               >
                 {f}
@@ -97,7 +98,7 @@ export default function FeaturedProjects() {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {project.tools.map((tool, idx) => (
-                    <Badge key={idx} variant="secondary">
+                    <Badge key={idx} variant={idx === 0 ? "default" : "secondary"} className={idx === 0 ? "bg-accent/20 text-accent border-accent/30" : ""}>
                       {tool}
                     </Badge>
                   ))}
@@ -108,7 +109,7 @@ export default function FeaturedProjects() {
         </div>
 
         <div className="text-center">
-          <Button size="lg" className="rounded-full px-8" data-testid="button-view-portfolio">
+          <Button size="lg" className="rounded-full px-8 bg-accent hover:bg-accent/90 text-accent-foreground" data-testid="button-view-portfolio">
             See Full Portfolio
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>

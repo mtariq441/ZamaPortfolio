@@ -7,21 +7,25 @@ export default function WhyChooseUs() {
       icon: Users,
       title: "Creative Pashtoon Team",
       description: "Diverse perspectives bringing unique cultural insights to every project",
+      color: "primary",
     },
     {
       icon: Zap,
       title: "Fast & Scalable Solutions",
       description: "Modern tech stack ensuring your website grows with your business",
+      color: "accent",
     },
     {
       icon: Sparkles,
       title: "100% Custom Designs",
       description: "No templates. Every design is crafted specifically for your brand",
+      color: "primary",
     },
     {
       icon: MessageCircle,
       title: "Friendly Support",
       description: "Clear communication and ongoing support throughout your journey",
+      color: "accent",
     },
   ];
 
@@ -40,10 +44,12 @@ export default function WhyChooseUs() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {reasons.map((reason, index) => {
             const Icon = reason.icon;
+            const colorClass = reason.color === "accent" ? "bg-accent/10" : "bg-primary/10";
+            const iconColorClass = reason.color === "accent" ? "text-accent" : "text-primary";
             return (
               <Card key={index} className="p-6 text-center hover-elevate" data-testid={`card-reason-${index}`}>
-                <div className="inline-flex p-4 rounded-full bg-primary/10 mb-4">
-                  <Icon className="h-6 w-6 text-primary" />
+                <div className={`inline-flex p-4 rounded-full ${colorClass} mb-4`}>
+                  <Icon className={`h-6 w-6 ${iconColorClass}`} />
                 </div>
                 <h3 className="font-semibold text-lg mb-2">{reason.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">

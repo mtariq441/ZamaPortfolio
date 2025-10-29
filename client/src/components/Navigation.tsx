@@ -21,7 +21,7 @@ export default function Navigation() {
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
             <span className="font-display text-2xl font-bold text-primary">Zama</span>
-            <span className="font-display text-2xl font-bold">Services</span>
+            <span className="font-display text-2xl font-bold text-accent">Services</span>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
@@ -40,7 +40,7 @@ export default function Navigation() {
           </nav>
 
           <div className="hidden md:flex">
-            <Button asChild data-testid="button-get-quote">
+            <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground" data-testid="button-get-quote">
               <Link href="/contact">Get a Quote</Link>
             </Button>
           </div>
@@ -72,7 +72,7 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <Button asChild className="w-full" data-testid="button-mobile-quote">
+            <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" data-testid="button-mobile-quote">
               <Link href="/contact">Get a Quote</Link>
             </Button>
           </nav>

@@ -7,6 +7,8 @@ export default function Services() {
     {
       title: "Web Development",
       icon: Code2,
+      iconBg: "bg-primary/10",
+      iconColor: "text-primary",
       features: [
         "Webflow Websites",
         "Custom-Coded Sites",
@@ -18,6 +20,8 @@ export default function Services() {
     {
       title: "Graphic Design",
       icon: Palette,
+      iconBg: "bg-accent/10",
+      iconColor: "text-accent",
       features: [
         "Brand Identity Design",
         "Logo & Visual Systems",
@@ -46,8 +50,8 @@ export default function Services() {
             return (
               <Card key={index} className="p-8 hover-elevate" data-testid={`card-service-${index}`}>
                 <div className="flex items-center space-x-4 mb-6">
-                  <div className="p-3 rounded-lg bg-primary/10">
-                    <Icon className="h-6 w-6 text-primary" />
+                  <div className={`p-3 rounded-lg ${service.iconBg}`}>
+                    <Icon className={`h-6 w-6 ${service.iconColor}`} />
                   </div>
                   <h3 className="font-display text-2xl md:text-3xl font-semibold">
                     {service.title}

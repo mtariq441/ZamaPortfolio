@@ -89,6 +89,7 @@ export default function Portfolio() {
                   key={f}
                   variant={filter === f ? "default" : "outline"}
                   onClick={() => setFilter(f)}
+                  className={filter === f ? "bg-accent hover:bg-accent/90 text-accent-foreground" : ""}
                   data-testid={`button-filter-portfolio-${f.toLowerCase().replace(' ', '-')}`}
                 >
                   {f}

@@ -33,18 +33,21 @@ export default function Testimonials() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="p-8 hover-elevate" data-testid={`card-testimonial-${index}`}>
-              <Quote className="h-8 w-8 text-primary mb-4" />
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                "{testimonial.quote}"
-              </p>
-              <div className="border-t pt-4">
-                <p className="font-semibold" data-testid={`text-testimonial-author-${index}`}>{testimonial.author}</p>
-                <p className="text-sm text-muted-foreground">{testimonial.company}</p>
-              </div>
-            </Card>
-          ))}
+          {testimonials.map((testimonial, index) => {
+            const quoteColor = index % 2 === 0 ? "text-primary" : "text-accent";
+            return (
+              <Card key={index} className="p-8 hover-elevate" data-testid={`card-testimonial-${index}`}>
+                <Quote className={`h-8 w-8 ${quoteColor} mb-4`} />
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  "{testimonial.quote}"
+                </p>
+                <div className="border-t pt-4">
+                  <p className="font-semibold" data-testid={`text-testimonial-author-${index}`}>{testimonial.author}</p>
+                  <p className="text-sm text-muted-foreground">{testimonial.company}</p>
+                </div>
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>

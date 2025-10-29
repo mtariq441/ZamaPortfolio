@@ -14,8 +14,7 @@ export default function CTASection() {
           </p>
           <Button
             size="lg"
-            variant="secondary"
-            className="rounded-full px-8 mt-4"
+            className="rounded-full px-8 mt-4 bg-accent hover:bg-accent/90 text-accent-foreground"
             onClick={() => window.location.href = "/contact"}
             data-testid="button-start-project"
           >

@@ -71,8 +71,8 @@ export default function ServicesPage() {
             <div>
               <div className="mb-12">
                 <div className="flex items-center space-x-4 mb-6">
-                  <div className="p-4 rounded-lg bg-destructive/10">
-                    <Palette className="h-8 w-8 text-destructive" />
+                  <div className="p-4 rounded-lg bg-accent/10">
+                    <Palette className="h-8 w-8 text-accent" />
                   </div>
                   <div>
                     <h2 className="font-display text-4xl md:text-5xl font-bold">Graphic Design</h2>
@@ -88,7 +88,7 @@ export default function ServicesPage() {
                   const Icon = feature.icon;
                   return (
                     <Card key={index} className="p-6 hover-elevate" data-testid={`card-design-${index}`}>
-                      <Icon className="h-8 w-8 text-destructive mb-4" />
+                      <Icon className="h-8 w-8 text-accent mb-4" />
                       <h3 className="font-semibold text-lg mb-2">{feature.title}</h3>
                       <p className="text-sm text-muted-foreground">{feature.description}</p>
                     </Card>

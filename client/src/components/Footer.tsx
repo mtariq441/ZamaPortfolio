@@ -25,7 +25,7 @@ export default function Footer() {
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2">
               <span className="font-display text-2xl font-bold text-primary">Zama</span>
-              <span className="font-display text-2xl font-bold">Services</span>
+              <span className="font-display text-2xl font-bold text-accent">Services</span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Creative digital agency specializing in Web Development and Graphic Design.
