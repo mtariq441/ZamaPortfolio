@@ -1,0 +1,211 @@
+Perfect 👌 — **Zama Services** is a strong, memorable name (means “Our Services” in Pashto — very local yet global-friendly).
+
+Here’s your updated **website structure + content layout** for your digital agency portfolio under the brand name **Zama Services** — offering **Web Development** and **Graphic Design** services, powered by your four-member team.
+
+---
+
+## 🌐 **Zama Services – Official Website Structure**
+
+### **1. Home Page**
+
+**Goal:** Make a bold first impression and instantly show what Zama Services does.
+
+**Sections:**
+
+#### 🏠 Hero Section
+
+**Headline:**
+
+> We Build Digital Experiences That Convert.
+> **Subtext:**
+> Zama Services is a creative digital agency specializing in Web Development and Graphic Design. We craft smart, modern websites and visuals that help your business grow.
+> **CTA Buttons:**
+
+* “View Our Work”
+* “Get a Free Quote”
+
+---
+
+#### 💡 About Zama Services (Mini Section)
+
+Short paragraph:
+
+> Founded by four creative minds from Pakistan, Zama Services blends strategy, design, and technology to deliver world-class web and branding solutions.
+
+---
+
+#### ⚙️ Our Services (2 Columns)
+
+**Web Development**
+
+* Webflow Websites
+* Custom-Coded Sites
+* SEO Optimization
+* AI Chatbot Integration
+* Website Maintenance
+
+**Graphic Design**
+
+* Brand Identity Design
+* Logo & Visual Systems
+* UI/UX Design
+* Marketing Materials
+* Social Media Graphics
+
+**CTA:** “Explore All Services”
+
+---
+
+#### 💼 Featured Projects
+
+Showcase 4–6 top projects:
+
+* Project thumbnail
+* Title & short description
+* Filter: (All / Web Development / Design)
+
+**CTA:** “See Full Portfolio”
+
+---
+
+#### 🧠 Why Choose Zama Services
+
+3–4 cards with icons:
+
+* Creative Pashtoon Team
+* Fast & Scalable Web Solutions
+* 100% Custom Designs
+* Friendly Communication & Support
+
+---
+
+#### 💬 Testimonials
+
+Highlight client success stories or placeholder reviews.
+
+---
+
+#### 🚀 CTA Section
+
+> Let’s Build Something Great Together
+> Button: **Start Your Project**
+
+---
+
+### **2. About Page**
+
+**Goal:** Build trust and introduce the team behind Zama Services.
+
+**Sections:**
+
+* **Our Story:**
+  How Zama Services started — 4 passionate creators combining design & development skills.
+* **Mission:**
+  To help businesses stand out through smart design and functional web experiences.
+* **Vision:**
+  To become a leading Pashtoon-led global creative agency.
+* **Our Team:**
+  Grid of 4 profiles:
+
+  * **Muhammad Tariq** – Webflow Developer & Team Lead
+  * **Muhammad Ubaid** – Full Stack / Frontend Developer
+  * **Wahid Graphix** – Graphic & Brand Designer
+  * **Muhammad Ibrahim** – UI/UX & Marketing Assistant
+
+---
+
+### **3. Services Page**
+
+**Goal:** Explain your services clearly with benefits.
+
+#### 🔹 Web Development
+
+* Webflow & Custom Websites
+* SEO Integration
+* CMS & Dynamic Content
+* AI Chatbot + Automation
+* Website Optimization
+
+#### 🔹 Graphic Design
+
+* Logo & Brand Identity
+* UI/UX Design for Apps
+* Marketing & Social Media Design
+* Print & Digital Ads
+
+**CTA:** “Request a Quote”
+
+---
+
+### **4. Portfolio Page**
+
+**Goal:** Show credibility through your best work.
+
+**Filters:** All | Web Development | Graphic Design
+Each card:
+
+* Project image
+* Title
+* Tools used
+* “View Case Study”
+
+---
+
+### **5. Project Case Study Page**
+
+**Goal:** Deep dive into individual project details.
+Sections:
+
+* Overview (Client + Challenge)
+* Process (Design → Development)
+* Results (Metrics + Screens)
+* Tools Used (Figma, Webflow, etc.)
+* Client Feedback
+
+---
+
+### **6. Contact Page**
+
+**Goal:** Encourage quick communication.
+
+**Form:**
+
+* Name
+* Email
+* Project Type (Dropdown)
+* Message
+  **Extra:**
+  📧 [info@zamaservices.com](mailto:info@zamaservices.com)
+  📞 WhatsApp / Call Button
+  🌐 Social Links (Instagram, LinkedIn, Behance)
+
+**Tagline:**
+
+> Let’s bring your vision to life.
+
+---
+
+### **7. (Optional) Blog Page**
+
+For SEO growth:
+
+* Web Design Tips
+* Brand Design Insights
+* Case Studies
+* Client Success Stories
+
+---
+
+### **8. Footer (Global)**
+
+Include:
+
+* Zama Services Logo
+* Quick Links: Home | About | Services | Portfolio | Contact
+* Social Links (LinkedIn, Behance, Instagram)
+* Copyright © 2025 Zama Services. All Rights Reserved.
+
+---
+
+Would you like me to now create a **visual content layout (Webflow-style wireframe)** — with text placeholders, button labels, and section headings ready to copy into Webflow?
+That would make it easy for you to start building the actual site design.
