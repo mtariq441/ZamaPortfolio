@@ -35,17 +35,17 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Button
               size="lg"
-              className="rounded-full px-8 bg-accent hover:bg-accent/90 text-accent-foreground border-accent-border"
+              className="rounded-full px-8 bg-accent hover:bg-accent/90 text-accent-foreground border-accent-border transition-all hover:scale-105 hover:shadow-lg"
               onClick={() => scrollToSection("projects")}
               data-testid="button-view-work"
             >
               View Our Work
-              <ArrowRight className="ml-2 h-4 w-4" />
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="rounded-full px-8 backdrop-blur-md bg-background/80"
+              className="rounded-full px-8 backdrop-blur-md bg-background/80 transition-all hover:scale-105 hover:shadow-lg"
               onClick={() => window.location.href = "/contact"}
               data-testid="button-get-quote"
             >

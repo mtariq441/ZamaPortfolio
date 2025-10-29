@@ -19,7 +19,7 @@ export default function Navigation() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2 transition-transform hover:scale-105">
             <span className="font-display text-2xl font-bold text-primary">Zama</span>
             <span className="font-display text-2xl font-bold text-accent">Services</span>
           </Link>
@@ -29,8 +29,8 @@ export default function Navigation() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
-                  location === link.href ? "text-primary" : "text-muted-foreground"
+                className={`text-sm font-medium transition-all hover:text-primary relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full ${
+                  location === link.href ? "text-primary after:w-full" : "text-muted-foreground"
                 }`}
                 data-testid={`link-nav-${link.label.toLowerCase()}`}
               >
@@ -63,7 +63,7 @@ export default function Navigation() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
+                className={`text-sm font-medium transition-all hover:text-primary hover:translate-x-2 ${
                   location === link.href ? "text-primary" : "text-muted-foreground"
                 }`}
                 onClick={() => setMobileMenuOpen(false)}

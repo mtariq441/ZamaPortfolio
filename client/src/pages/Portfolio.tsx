@@ -108,14 +108,14 @@ export default function Portfolio() {
             {filteredProjects.map((project, index) => (
               <Card
                 key={index}
-                className="overflow-hidden hover-elevate group cursor-pointer"
+                className="overflow-hidden hover-elevate group cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
                 data-testid={`card-portfolio-project-${index}`}
               >
                 <div className="aspect-[4/3] overflow-hidden relative">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <p className="text-sm text-primary-foreground">View Case Study →</p>

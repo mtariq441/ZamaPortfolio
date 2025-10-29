@@ -36,7 +36,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => {
             const quoteColor = index % 2 === 0 ? "text-primary" : "text-accent";
             return (
-              <Card key={index} className="p-8 hover-elevate" data-testid={`card-testimonial-${index}`}>
+              <Card key={index} className="p-8 hover-elevate transition-all duration-300 hover:shadow-lg hover:-translate-y-1" data-testid={`card-testimonial-${index}`}>
                 <Quote className={`h-8 w-8 ${quoteColor} mb-4`} />
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   "{testimonial.quote}"

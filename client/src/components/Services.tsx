@@ -48,7 +48,7 @@ export default function Services() {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <Card key={index} className="p-8 hover-elevate" data-testid={`card-service-${index}`}>
+              <Card key={index} className="p-8 hover-elevate transition-all duration-300 hover:shadow-lg hover:-translate-y-1" data-testid={`card-service-${index}`}>
                 <div className="flex items-center space-x-4 mb-6">
                   <div className={`p-3 rounded-lg ${service.iconBg}`}>
                     <Icon className={`h-6 w-6 ${service.iconColor}`} />
@@ -71,7 +71,7 @@ export default function Services() {
         </div>
 
         <div className="text-center">
-          <Button size="lg" variant="outline" className="rounded-full px-8" data-testid="button-explore-services">
+          <Button size="lg" variant="outline" className="rounded-full px-8 transition-all hover:scale-105" data-testid="button-explore-services">
             Explore All Services
           </Button>
         </div>

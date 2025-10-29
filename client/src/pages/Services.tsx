@@ -58,8 +58,8 @@ export default function ServicesPage() {
                 {webDevFeatures.map((feature, index) => {
                   const Icon = feature.icon;
                   return (
-                    <Card key={index} className="p-6 hover-elevate" data-testid={`card-webdev-${index}`}>
-                      <Icon className="h-8 w-8 text-primary mb-4" />
+                    <Card key={index} className="p-6 hover-elevate transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group" data-testid={`card-webdev-${index}`}>
+                      <Icon className="h-8 w-8 text-primary mb-4 transition-transform group-hover:scale-110" />
                       <h3 className="font-semibold text-lg mb-2">{feature.title}</h3>
                       <p className="text-sm text-muted-foreground">{feature.description}</p>
                     </Card>
@@ -87,8 +87,8 @@ export default function ServicesPage() {
                 {designFeatures.map((feature, index) => {
                   const Icon = feature.icon;
                   return (
-                    <Card key={index} className="p-6 hover-elevate" data-testid={`card-design-${index}`}>
-                      <Icon className="h-8 w-8 text-accent mb-4" />
+                    <Card key={index} className="p-6 hover-elevate transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group" data-testid={`card-design-${index}`}>
+                      <Icon className="h-8 w-8 text-accent mb-4 transition-transform group-hover:scale-110" />
                       <h3 className="font-semibold text-lg mb-2">{feature.title}</h3>
                       <p className="text-sm text-muted-foreground">{feature.description}</p>
                     </Card>

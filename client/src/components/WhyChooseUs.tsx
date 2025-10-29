@@ -47,9 +47,9 @@ export default function WhyChooseUs() {
             const colorClass = reason.color === "accent" ? "bg-accent/10" : "bg-primary/10";
             const iconColorClass = reason.color === "accent" ? "text-accent" : "text-primary";
             return (
-              <Card key={index} className="p-6 text-center hover-elevate" data-testid={`card-reason-${index}`}>
-                <div className={`inline-flex p-4 rounded-full ${colorClass} mb-4`}>
-                  <Icon className={`h-6 w-6 ${iconColorClass}`} />
+              <Card key={index} className="p-6 text-center hover-elevate transition-all duration-300 hover:shadow-lg hover:-translate-y-1" data-testid={`card-reason-${index}`}>
+                <div className={`inline-flex p-4 rounded-full ${colorClass} mb-4 transition-transform group-hover:scale-110`}>
+                  <Icon className={`h-6 w-6 ${iconColorClass} transition-transform group-hover:rotate-12`} />
                 </div>
                 <h3 className="font-semibold text-lg mb-2">{reason.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">

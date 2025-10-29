@@ -130,7 +130,7 @@ export default function About() {
                   description: "We stay updated with the latest trends and technologies to deliver cutting-edge solutions.",
                 },
               ].map((value, index) => (
-                <Card key={index} className="p-8 text-center">
+                <Card key={index} className="p-8 text-center hover-elevate transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                   <h3 className="font-semibold text-xl mb-3">{value.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">{value.description}</p>
                 </Card>

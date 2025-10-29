@@ -79,14 +79,14 @@ export default function FeaturedProjects() {
           {filteredProjects.map((project, index) => (
             <Card
               key={index}
-              className="overflow-hidden hover-elevate group cursor-pointer"
+              className="overflow-hidden hover-elevate group cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
               data-testid={`card-project-${index}`}
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               <div className="p-6">
@@ -98,7 +98,7 @@ export default function FeaturedProjects() {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {project.tools.map((tool, idx) => (
-                    <Badge key={idx} variant={idx === 0 ? "default" : "secondary"} className={idx === 0 ? "bg-accent/20 text-accent border-accent/30" : ""}>
+                    <Badge key={idx} variant={idx === 0 ? "default" : "secondary"} className={`transition-all hover:scale-110 ${idx === 0 ? "bg-accent/20 text-accent border-accent/30" : ""}`}>
                       {tool}
                     </Badge>
                   ))}
@@ -109,9 +109,9 @@ export default function FeaturedProjects() {
         </div>
 
         <div className="text-center">
-          <Button size="lg" className="rounded-full px-8 bg-accent hover:bg-accent/90 text-accent-foreground" data-testid="button-view-portfolio">
+          <Button size="lg" className="rounded-full px-8 bg-accent hover:bg-accent/90 text-accent-foreground transition-all hover:scale-105 hover:shadow-lg group" data-testid="button-view-portfolio">
             See Full Portfolio
-            <ArrowRight className="ml-2 h-4 w-4" />
+            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
           </Button>
         </div>
       </div>

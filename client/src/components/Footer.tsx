@@ -23,7 +23,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-12">
           <div className="space-y-4">
-            <Link href="/" className="flex items-center space-x-2">
+            <Link href="/" className="flex items-center space-x-2 transition-transform hover:scale-105">
               <span className="font-display text-2xl font-bold text-primary">Zama</span>
               <span className="font-display text-2xl font-bold text-accent">Services</span>
             </Link>
@@ -39,7 +39,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    className="text-sm text-muted-foreground hover:text-primary transition-all hover:translate-x-1"
                     data-testid={`link-footer-${link.label.toLowerCase()}`}
                   >
                     {link.label}
@@ -67,7 +67,7 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-primary transition-all hover:scale-125 hover:-translate-y-1"
                 data-testid="link-instagram"
                 aria-label="Instagram"
               >
@@ -77,7 +77,7 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-primary transition-all hover:scale-125 hover:-translate-y-1"
                 data-testid="link-linkedin"
                 aria-label="LinkedIn"
               >
@@ -87,7 +87,7 @@ export default function Footer() {
                 href="https://behance.net"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-primary transition-all hover:scale-125 hover:-translate-y-1"
                 data-testid="link-behance"
                 aria-label="Behance"
               >

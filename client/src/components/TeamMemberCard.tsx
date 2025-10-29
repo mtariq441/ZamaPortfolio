@@ -8,12 +8,12 @@ interface TeamMemberCardProps {
 
 export default function TeamMemberCard({ name, role, image }: TeamMemberCardProps) {
   return (
-    <Card className="overflow-hidden hover-elevate group" data-testid={`card-team-${name.toLowerCase().replace(' ', '-')}`}>
+    <Card className="overflow-hidden hover-elevate group transition-all duration-300 hover:shadow-xl hover:-translate-y-2" data-testid={`card-team-${name.toLowerCase().replace(' ', '-')}`}>
       <div className="aspect-square overflow-hidden">
         <img
           src={image}
           alt={name}
-          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
       </div>
       <div className="p-6 text-center">

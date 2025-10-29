@@ -14,12 +14,12 @@ export default function CTASection() {
           </p>
           <Button
             size="lg"
-            className="rounded-full px-8 mt-4 bg-accent hover:bg-accent/90 text-accent-foreground"
+            className="rounded-full px-8 mt-4 bg-accent hover:bg-accent/90 text-accent-foreground transition-all hover:scale-105 hover:shadow-xl group"
             onClick={() => window.location.href = "/contact"}
             data-testid="button-start-project"
           >
             Start Your Project
-            <ArrowRight className="ml-2 h-4 w-4" />
+            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
           </Button>
         </div>
       </div>

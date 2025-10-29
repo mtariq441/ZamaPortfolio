@@ -64,7 +64,7 @@ export default function Contact() {
                     href="https://instagram.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors"
+                    className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-all hover:translate-x-2"
                     data-testid="link-contact-instagram"
                   >
                     <SiInstagram className="h-5 w-5" />
@@ -74,7 +74,7 @@ export default function Contact() {
                     href="https://linkedin.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors"
+                    className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-all hover:translate-x-2"
                     data-testid="link-contact-linkedin"
                   >
                     <SiLinkedin className="h-5 w-5" />
@@ -84,7 +84,7 @@ export default function Contact() {
                     href="https://behance.net"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors"
+                    className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-all hover:translate-x-2"
                     data-testid="link-contact-behance"
                   >
                     <SiBehance className="h-5 w-5" />
