@@ -60,9 +60,11 @@ This is a **static React website** that can be deployed to Vercel without any ba
 ## Build Configuration
 
 The `vercel.json` file is already configured with:
-- **Build Command**: `npm run build` (uses Vite to build the React app)
-- **Output Directory**: `dist` (where Vite outputs the static files)
+- **Build Command**: `vite build` (builds the React app directly)
+- **Output Directory**: `dist/public` (where Vite outputs the static files)
 - **Rewrites**: All routes redirect to `/index.html` for React Router to work
+
+**Important**: Do not use `npm run build` as it contains legacy backend build steps. Always use `vite build` directly.
 
 ## Local Testing
 
@@ -72,11 +74,11 @@ Before deploying, test the build locally:
 # Install dependencies
 npm install
 
-# Build the project
-npm run build
+# Build the project (builds static files to dist/public)
+vite build
 
 # Preview the production build
-npm run preview
+vite preview --outDir dist/public
 ```
 
 ## Important Notes
@@ -97,13 +99,17 @@ If you encounter build errors:
 
 2. **Check build locally first**
    ```bash
-   npm run build
+   vite build
    ```
 
 3. **Verify all files are committed**
    ```bash
    git status
    ```
+
+4. **Common issues**:
+   - If you see errors about `server/index.ts`, make sure you're using `vite build` and not `npm run build`
+   - The `dist/public` folder should contain `index.html` and an `assets` folder after a successful build
 
 ## Custom Domain
 
