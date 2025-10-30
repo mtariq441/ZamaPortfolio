@@ -49,24 +49,24 @@ export default function FeaturedProjects() {
     : projects.filter(p => p.category === filter);
 
   return (
-    <section id="projects" className="py-16 md:py-24">
+    <section id="projects" className="py-20 md:py-32">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-        <div className="text-center mb-12">
-          <h2 className="font-display text-4xl md:text-5xl font-bold mb-4" data-testid="text-projects-title">
-            Featured Projects
+        <div className="text-center mb-16">
+          <h2 className="font-display text-5xl md:text-6xl lg:text-7xl font-black mb-6 uppercase tracking-tight" data-testid="text-projects-title">
+            FEATURED PROJECTS
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
+          <p className="text-muted-foreground text-xl md:text-2xl max-w-3xl mx-auto mb-10 font-light leading-relaxed">
             Explore our latest work and see how we transform ideas into reality
           </p>
 
-          <div className="flex flex-wrap gap-3 justify-center">
+          <div className="flex flex-wrap gap-4 justify-center">
             {filters.map((f) => (
               <Button
                 key={f}
                 variant={filter === f ? "default" : "outline"}
-                size="sm"
+                size="lg"
                 onClick={() => setFilter(f)}
-                className={filter === f ? "bg-accent hover:bg-accent/90 text-accent-foreground" : ""}
+                className={`rounded-full px-8 font-semibold uppercase tracking-wider border-2 ${filter === f ? "bg-accent hover:bg-accent/90 text-accent-foreground" : ""}`}
                 data-testid={`button-filter-${f.toLowerCase().replace(' ', '-')}`}
               >
                 {f}
@@ -75,11 +75,11 @@ export default function FeaturedProjects() {
           </div>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {filteredProjects.map((project, index) => (
             <Card
               key={index}
-              className="overflow-hidden hover-elevate group cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+              className="overflow-hidden hover-elevate group cursor-pointer transition-all duration-300 hover:shadow-2xl hover:-translate-y-3 border-2"
               data-testid={`card-project-${index}`}
             >
               <div className="aspect-[4/3] overflow-hidden">
@@ -89,16 +89,16 @@ export default function FeaturedProjects() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="font-semibold text-xl mb-2" data-testid={`text-project-title-${index}`}>
+              <div className="p-8">
+                <h3 className="font-bold text-2xl mb-3 uppercase tracking-tight" data-testid={`text-project-title-${index}`}>
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground text-sm mb-4">
+                <p className="text-muted-foreground text-base mb-6 leading-relaxed">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {project.tools.map((tool, idx) => (
-                    <Badge key={idx} variant={idx === 0 ? "default" : "secondary"} className={`transition-all hover:scale-110 ${idx === 0 ? "bg-accent/20 text-accent border-accent/30" : ""}`}>
+                    <Badge key={idx} variant={idx === 0 ? "default" : "secondary"} className={`transition-all hover:scale-110 text-sm px-3 py-1 font-medium ${idx === 0 ? "bg-accent/20 text-accent border-accent/30" : ""}`}>
                       {tool}
                     </Badge>
                   ))}
@@ -109,9 +109,9 @@ export default function FeaturedProjects() {
         </div>
 
         <div className="text-center">
-          <Button size="lg" className="rounded-full px-8 bg-accent hover:bg-accent/90 text-accent-foreground transition-all hover:scale-105 hover:shadow-lg group" data-testid="button-view-portfolio">
+          <Button size="lg" className="rounded-full px-10 py-6 text-base font-semibold uppercase tracking-wider bg-accent hover:bg-accent/90 text-accent-foreground transition-all hover:scale-105 hover:shadow-2xl group" data-testid="button-view-portfolio">
             See Full Portfolio
-            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
           </Button>
         </div>
       </div>

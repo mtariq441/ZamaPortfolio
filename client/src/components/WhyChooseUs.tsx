@@ -30,13 +30,13 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-muted/30">
+    <section className="py-20 md:py-32 bg-muted/30">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="font-display text-4xl md:text-5xl font-bold mb-4" data-testid="text-why-choose-title">
-            Why Choose Zama Services
+        <div className="text-center mb-16 md:mb-24">
+          <h2 className="font-display text-5xl md:text-6xl lg:text-7xl font-black mb-6 uppercase tracking-tight" data-testid="text-why-choose-title">
+            WHY CHOOSE ZAMA SERVICES
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-xl md:text-2xl max-w-3xl mx-auto font-light leading-relaxed">
             We combine creativity, technology, and dedication to deliver exceptional results
           </p>
         </div>
@@ -47,12 +47,12 @@ export default function WhyChooseUs() {
             const colorClass = reason.color === "accent" ? "bg-accent/10" : "bg-primary/10";
             const iconColorClass = reason.color === "accent" ? "text-accent" : "text-primary";
             return (
-              <Card key={index} className="p-6 text-center hover-elevate transition-all duration-300 hover:shadow-lg hover:-translate-y-1" data-testid={`card-reason-${index}`}>
-                <div className={`inline-flex p-4 rounded-full ${colorClass} mb-4 transition-transform group-hover:scale-110`}>
-                  <Icon className={`h-6 w-6 ${iconColorClass} transition-transform group-hover:rotate-12`} />
+              <Card key={index} className="p-8 text-center hover-elevate transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border-2" data-testid={`card-reason-${index}`}>
+                <div className={`inline-flex p-5 rounded-full ${colorClass} mb-6 transition-transform group-hover:scale-110`}>
+                  <Icon className={`h-8 w-8 ${iconColorClass} transition-transform group-hover:rotate-12`} />
                 </div>
-                <h3 className="font-semibold text-lg mb-2">{reason.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <h3 className="font-bold text-xl mb-3 uppercase tracking-tight">{reason.title}</h3>
+                <p className="text-base text-muted-foreground leading-relaxed">
                   {reason.description}
                 </p>
               </Card>

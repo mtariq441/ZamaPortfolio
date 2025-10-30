@@ -21,13 +21,13 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-20 md:py-32">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="font-display text-4xl md:text-5xl font-bold mb-4" data-testid="text-testimonials-title">
-            What Our Clients Say
+        <div className="text-center mb-16 md:mb-24">
+          <h2 className="font-display text-5xl md:text-6xl lg:text-7xl font-black mb-6 uppercase tracking-tight" data-testid="text-testimonials-title">
+            WHAT OUR CLIENTS SAY
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-xl md:text-2xl max-w-3xl mx-auto font-light leading-relaxed">
             Don't just take our word for it - hear from businesses we've helped grow
           </p>
         </div>
@@ -36,14 +36,14 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => {
             const quoteColor = index % 2 === 0 ? "text-primary" : "text-accent";
             return (
-              <Card key={index} className="p-8 hover-elevate transition-all duration-300 hover:shadow-lg hover:-translate-y-1" data-testid={`card-testimonial-${index}`}>
-                <Quote className={`h-8 w-8 ${quoteColor} mb-4`} />
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+              <Card key={index} className="p-10 hover-elevate transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border-2" data-testid={`card-testimonial-${index}`}>
+                <Quote className={`h-10 w-10 ${quoteColor} mb-6`} />
+                <p className="text-muted-foreground text-base mb-8 leading-relaxed">
                   "{testimonial.quote}"
                 </p>
-                <div className="border-t pt-4">
-                  <p className="font-semibold" data-testid={`text-testimonial-author-${index}`}>{testimonial.author}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.company}</p>
+                <div className="border-t pt-6">
+                  <p className="font-bold text-lg uppercase tracking-tight" data-testid={`text-testimonial-author-${index}`}>{testimonial.author}</p>
+                  <p className="text-sm text-muted-foreground mt-1">{testimonial.company}</p>
                 </div>
               </Card>
             );

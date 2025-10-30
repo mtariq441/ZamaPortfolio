@@ -24,8 +24,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-12">
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2 transition-transform hover:scale-105">
-              <span className="font-display text-2xl font-bold text-primary">Zama</span>
-              <span className="font-display text-2xl font-bold text-accent">Services</span>
+              <span className="font-display text-2xl font-black text-primary uppercase tracking-tight">ZAMA</span>
+              <span className="font-display text-2xl font-black text-accent uppercase tracking-tight">SERVICES</span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Creative digital agency specializing in Web Development and Graphic Design.
@@ -33,7 +33,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Quick Links</h3>
+            <h3 className="font-bold mb-4 uppercase tracking-wider">Quick Links</h3>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.href}>
@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Services</h3>
+            <h3 className="font-bold mb-4 uppercase tracking-wider">Services</h3>
             <ul className="space-y-3">
               {services.map((service) => (
                 <li key={service}>
@@ -61,7 +61,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Connect</h3>
+            <h3 className="font-bold mb-4 uppercase tracking-wider">Connect</h3>
             <div className="flex space-x-4">
               <a
                 href="https://instagram.com"

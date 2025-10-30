@@ -14,25 +14,25 @@ export default function Contact() {
       <section className="py-24 md:py-32">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="text-center mb-16">
-            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold mb-6" data-testid="text-contact-title">
-              Let's Bring Your Vision to Life
+            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-black mb-6 uppercase tracking-tight" data-testid="text-contact-title">
+              LET'S BRING YOUR VISION TO LIFE
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed">
               Ready to start your next project? Get in touch and let's create something amazing together.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-5 gap-12 mb-16">
             <div className="lg:col-span-3">
-              <Card className="p-8">
-                <h2 className="font-display text-2xl font-bold mb-6">Send us a Message</h2>
+              <Card className="p-10 border-2">
+                <h2 className="font-display text-3xl font-black mb-8 uppercase tracking-tight">Send us a Message</h2>
                 <ContactForm />
               </Card>
             </div>
 
             <div className="lg:col-span-2 space-y-6">
-              <Card className="p-8">
-                <h3 className="font-semibold text-lg mb-4">Contact Information</h3>
+              <Card className="p-8 border-2">
+                <h3 className="font-bold text-xl mb-6 uppercase tracking-tight">Contact Information</h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
                     <Mail className="h-5 w-5 text-primary mt-1" />
@@ -57,8 +57,8 @@ export default function Contact() {
                 </div>
               </Card>
 
-              <Card className="p-8">
-                <h3 className="font-semibold text-lg mb-4">Follow Us</h3>
+              <Card className="p-8 border-2">
+                <h3 className="font-bold text-xl mb-6 uppercase tracking-tight">Follow Us</h3>
                 <div className="space-y-3">
                   <a
                     href="https://instagram.com"
@@ -93,9 +93,9 @@ export default function Contact() {
                 </div>
               </Card>
 
-              <Card className="p-8 bg-accent text-accent-foreground">
-                <h3 className="font-semibold text-lg mb-2">Quick Response</h3>
-                <p className="text-sm mb-4 text-accent-foreground/90">
+              <Card className="p-8 bg-accent text-accent-foreground border-2 border-accent">
+                <h3 className="font-bold text-xl mb-3 uppercase tracking-tight">Quick Response</h3>
+                <p className="text-base mb-6 text-accent-foreground/90">
                   We typically respond to all inquiries within 24 hours
                 </p>
                 <Button

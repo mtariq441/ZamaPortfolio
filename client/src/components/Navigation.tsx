@@ -20,8 +20,8 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2 transition-transform hover:scale-105">
-            <span className="font-display text-2xl font-bold text-primary">Zama</span>
-            <span className="font-display text-2xl font-bold text-accent">Services</span>
+            <span className="font-display text-2xl font-black text-primary uppercase tracking-tight">ZAMA</span>
+            <span className="font-display text-2xl font-black text-accent uppercase tracking-tight">SERVICES</span>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
@@ -29,7 +29,7 @@ export default function Navigation() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-all hover:text-primary relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full ${
+                className={`text-sm font-semibold uppercase tracking-wider transition-all hover:text-primary relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full ${
                   location === link.href ? "text-primary after:w-full" : "text-muted-foreground"
                 }`}
                 data-testid={`link-nav-${link.label.toLowerCase()}`}
@@ -40,7 +40,7 @@ export default function Navigation() {
           </nav>
 
           <div className="hidden md:flex">
-            <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground" data-testid="button-get-quote">
+            <Button asChild className="rounded-full px-6 font-semibold uppercase tracking-wider bg-accent hover:bg-accent/90 text-accent-foreground transition-all hover:scale-105" data-testid="button-get-quote">
               <Link href="/contact">Get a Quote</Link>
             </Button>
           </div>
@@ -72,7 +72,7 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" data-testid="button-mobile-quote">
+            <Button asChild className="w-full rounded-full font-semibold uppercase tracking-wider bg-accent hover:bg-accent/90 text-accent-foreground" data-testid="button-mobile-quote">
               <Link href="/contact">Get a Quote</Link>
             </Button>
           </nav>
