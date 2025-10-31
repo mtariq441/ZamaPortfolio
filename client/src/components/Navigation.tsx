@@ -21,7 +21,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center transition-transform hover:scale-105">
-            <img src={logoImage} alt="Zama Services Logo" className="h-10 w-auto" />
+            <img src={logoImage} alt="Zama Services Logo" className="h-14 w-auto" />
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
