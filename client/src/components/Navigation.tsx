@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoImage from "@assets/Gemini_Generated_Image_fy5d1tfy5d1tfy5d_1761943369162.png";
 
 export default function Navigation() {
   const [location] = useLocation();
@@ -19,9 +20,8 @@ export default function Navigation() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2 transition-transform hover:scale-105">
-            <span className="font-display text-2xl font-black text-primary uppercase tracking-tight">ZAMA</span>
-            <span className="font-display text-2xl font-black text-accent uppercase tracking-tight">SERVICES</span>
+          <Link href="/" className="flex items-center transition-transform hover:scale-105">
+            <img src={logoImage} alt="Zama Services Logo" className="h-10 w-auto" />
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">

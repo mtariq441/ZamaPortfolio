@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { SiInstagram, SiLinkedin, SiBehance } from "react-icons/si";
+import logoImage from "@assets/Gemini_Generated_Image_fy5d1tfy5d1tfy5d_1761943369162.png";
 
 export default function Footer() {
   const quickLinks = [
@@ -23,9 +24,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-12">
           <div className="space-y-4">
-            <Link href="/" className="flex items-center space-x-2 transition-transform hover:scale-105">
-              <span className="font-display text-2xl font-black text-primary uppercase tracking-tight">ZAMA</span>
-              <span className="font-display text-2xl font-black text-accent uppercase tracking-tight">SERVICES</span>
+            <Link href="/" className="flex items-center transition-transform hover:scale-105">
+              <img src={logoImage} alt="Zama Services Logo" className="h-12 w-auto" />
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Creative digital agency specializing in Web Development and Graphic Design.
