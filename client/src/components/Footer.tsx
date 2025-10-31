@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { SiInstagram, SiLinkedin, SiBehance } from "react-icons/si";
-import logoImage from "@assets/Gemini_Generated_Image_fy5d1tfy5d1tfy5d_1761943838263.png";
+import logoImage from "@assets/ZAMA LOGO-1_1_1@500x_1761945924134.png";
 
 export default function Footer() {
   const quickLinks = [
