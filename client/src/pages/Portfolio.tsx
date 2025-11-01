@@ -33,7 +33,7 @@ export default function Portfolio() {
       description: "Healthcare website for mobile in-home wound care services in Texas, Oklahoma, and Louisiana",
       category: "Web Development",
       image: usWoundCare,
-      tools: ["HTML", "CSS", "JavaScript"],
+      tools: ["Webflow", "Figma to Webflow"],
       client: "US Wound Care",
     },
     {

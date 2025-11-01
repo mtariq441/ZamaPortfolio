@@ -29,7 +29,7 @@ export default function FeaturedProjects() {
       description: "Healthcare website for mobile in-home wound care services",
       category: "Web Development",
       image: usWoundCare,
-      tools: ["HTML", "CSS", "JavaScript"],
+      tools: ["Webflow", "Figma to Webflow"],
     },
     {
       title: "MIK Portfolio",
