@@ -24,7 +24,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-32 md:py-40">
         <div className="max-w-5xl mx-auto text-center space-y-10">
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-black tracking-tight uppercase leading-[1.1]" data-testid="text-hero-headline">
-            WE BUILD DIGITAL EXPERIENCES THAT CONVERT
+            WE BUILD <span className="bg-primary text-primary-foreground px-4 py-2 inline-block">DIGITAL</span> EXPERIENCES THAT <span className="bg-primary text-primary-foreground px-4 py-2 inline-block">CONVERT</span>
           </h1>
           
           <p className="text-xl md:text-2xl leading-relaxed text-muted-foreground max-w-3xl mx-auto font-light" data-testid="text-hero-subtext">
