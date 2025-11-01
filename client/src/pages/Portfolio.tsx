@@ -15,6 +15,17 @@ import dashboardDesign from "@assets/✅ (4)_1761999784026.png";
 import dashboardDesign2 from "@assets/✅ (3)_1761999784026.png";
 import usWoundCare from "@assets/✅ (2)_1761999784027.png";
 import americanRoyal from "@assets/✅ (1)_1761999784027.png";
+import luxuryRenovations from "@assets/✅ (29)_1762037945184.jpg";
+import babaWaliKhan from "@assets/✅ (28)_1762037945185.jpg";
+import aureliaAgency from "@assets/✅ (26)_1762037945185.jpg";
+import youWelzAgency from "@assets/✅ (25)_1762037945185.jpg";
+import sirpiMedical from "@assets/✅ (24)_1762037945185.jpg";
+import viveHealth from "@assets/✅ (23)_1762037945186.jpg";
+import footstepsGreatness from "@assets/✅ (22)_1762037945186.jpg";
+import oryfiveAgency from "@assets/✅ (21)_1762037945186.jpg";
+import electronicz from "@assets/✅ (20)_1762037945186.jpg";
+import risaInfrastructure from "@assets/✅ (19)_1762037945187.jpg";
+import proximityArchery from "@assets/✅ (18)_1762037945187.jpg";
 
 export default function Portfolio() {
   const [filter, setFilter] = useState("All");
@@ -99,6 +110,94 @@ export default function Portfolio() {
       image: spinxJersey,
       tools: ["Illustrator", "Brand Design", "Sports Graphics"],
       client: "Spinx Jersey",
+    },
+    {
+      title: "Luxury Renovations",
+      description: "Premium NYC contractor website with modern design, compelling CTAs and showcase of 250+ projects",
+      category: "Web Development",
+      image: luxuryRenovations,
+      tools: ["Webflow", "Responsive Design", "Custom Forms"],
+      client: "American Royal Renovations",
+    },
+    {
+      title: "Baba Wali Khan University",
+      description: "Comprehensive educational institution website with admissions portal and academic information",
+      category: "Web Development",
+      image: babaWaliKhan,
+      tools: ["Webflow", "CMS Integration", "Responsive Design"],
+      client: "Baba Wali Khan University",
+    },
+    {
+      title: "Aurelia Creative Agency",
+      description: "Bold and vibrant creative agency website showcasing branding, graphic design, and web design services",
+      category: "Web Development",
+      image: aureliaAgency,
+      tools: ["Webflow", "Animation", "Creative Design"],
+      client: "Aurelia Creative Agency",
+    },
+    {
+      title: "YouWelz Agency",
+      description: "Marketing and creative agency website bringing action to brands through digital solutions",
+      category: "Web Development",
+      image: youWelzAgency,
+      tools: ["Webflow", "Brand Design", "Marketing"],
+      client: "YouWelz Marketing Agency",
+    },
+    {
+      title: "Dr. Sirpi Medical",
+      description: "Professional medical website for hair and skin specialist with Harvard credentials",
+      category: "Web Development",
+      image: sirpiMedical,
+      tools: ["Webflow", "Medical Design", "Appointment System"],
+      client: "Dr. Joe Mathew - Sirpi Clinic",
+    },
+    {
+      title: "Vive Health",
+      description: "Healthcare delivery platform website focused on transforming patient care with confidence and efficiency",
+      category: "Web Development",
+      image: viveHealth,
+      tools: ["Webflow", "Healthcare UX", "Responsive Design"],
+      client: "Vive Health",
+    },
+    {
+      title: "Footsteps of Greatness",
+      description: "Inspiring website celebrating Vienna's rich cultural heritage and historical achievements",
+      category: "Web Development",
+      image: footstepsGreatness,
+      tools: ["Webflow", "Dark Theme", "Premium Design"],
+      client: "Footsteps of Greatness",
+    },
+    {
+      title: "Oryfive Creative Agency",
+      description: "Creative agency website driving success with innovative solutions in strategy consulting and digital marketing",
+      category: "Web Development",
+      image: oryfiveAgency,
+      tools: ["Webflow Template", "Agency Design", "Modern UI"],
+      client: "Oryfive Creative Agency",
+    },
+    {
+      title: "Electronicz E-commerce",
+      description: "Modern e-commerce website for electronics with innovation meets excellence theme",
+      category: "Web Development",
+      image: electronicz,
+      tools: ["Webflow", "E-commerce", "Product Catalog"],
+      client: "Electronicz",
+    },
+    {
+      title: "RISA Infrastructure",
+      description: "Construction and infrastructure company website building Norway's future with 600+ employees",
+      category: "Web Development",
+      image: risaInfrastructure,
+      tools: ["Webflow", "Corporate Design", "Project Showcase"],
+      client: "RISA Infrastructure",
+    },
+    {
+      title: "Proximity Archery",
+      description: "Data analytics website unlocking customer data with modern design and bold orange accents",
+      category: "Web Development",
+      image: proximityArchery,
+      tools: ["Webflow", "Data Visualization", "Modern UI"],
+      client: "Proximity Archery",
     },
   ];
 
