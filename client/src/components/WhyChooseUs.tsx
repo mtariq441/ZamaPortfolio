@@ -5,8 +5,8 @@ export default function WhyChooseUs() {
   const reasons = [
     {
       icon: Users,
-      title: "Creative Pashtoon Team",
-      description: "Diverse perspectives bringing unique cultural insights to every project",
+      title: "Creative Team",
+      description: "Diverse perspectives bringing unique insights to every project",
       color: "primary",
     },
     {

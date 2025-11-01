@@ -87,7 +87,7 @@ export default function About() {
                 <div>
                   <h3 className="font-semibold text-xl mb-2">Vision</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    To become a leading Pashtoon-led global creative agency, known for innovative 
+                    To become a leading global creative agency, known for innovative 
                     solutions and exceptional client relationships.
                   </p>
                 </div>
