@@ -82,10 +82,11 @@ export default function FeaturedProjects() {
               className="overflow-hidden hover-elevate group cursor-pointer transition-all duration-300 hover:shadow-2xl hover:-translate-y-3 border-2"
               data-testid={`card-project-${index}`}
             >
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="aspect-[4/3] overflow-hidden bg-muted/30">
                 <img
                   src={project.image}
                   alt={project.title}
+                  loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
