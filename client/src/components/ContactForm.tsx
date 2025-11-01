@@ -45,16 +45,54 @@ export default function ContactForm() {
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     setIsSubmitting(true);
-    console.log("Form submitted:", values);
-    
-    setTimeout(() => {
-      setIsSubmitting(false);
+
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+
+    if (!accessKey) {
       toast({
-        title: "Message sent!",
-        description: "We'll get back to you as soon as possible.",
+        title: "Configuration Error",
+        description: "Contact form is not configured. Please reach out via WhatsApp instead.",
+        variant: "destructive",
       });
-      form.reset();
-    }, 1000);
+      setIsSubmitting(false);
+      return;
+    }
+
+    try {
+      const formData = new FormData();
+      formData.append("access_key", accessKey);
+      formData.append("name", values.name);
+      formData.append("email", values.email);
+      formData.append("project_type", values.projectType);
+      formData.append("message", values.message);
+      formData.append("subject", `New Contact Form Submission - ${values.projectType}`);
+      formData.append("from_name", "Zama Services Website");
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        toast({
+          title: "Message sent!",
+          description: "We'll get back to you as soon as possible.",
+        });
+        form.reset();
+      } else {
+        throw new Error("Form submission failed");
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again or contact us via WhatsApp.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

@@ -5,62 +5,100 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
-import project1 from "@assets/generated_images/E-commerce_project_mockup_31d889c3.png";
-import project2 from "@assets/generated_images/Corporate_website_project_2a352df3.png";
-import project3 from "@assets/generated_images/Brand_identity_project_b3258a40.png";
-import project4 from "@assets/generated_images/Mobile_app_UI_project_967efc3f.png";
+import harliStudio from "@assets/✅ (17)_1761999784024.jpg";
+import kazoaCoffee from "@assets/✅ (16)_1761999784025.jpg";
+import domexoBurger from "@assets/✅ (15)_1761999784025.jpg";
+import islandProperty from "@assets/✅ (14)_1761999784025.jpg";
+import spinxJersey from "@assets/✅ (13)_1761999784025.jpg";
+import mikPortfolio from "@assets/✅ (5)_1761999784026.png";
+import dashboardDesign from "@assets/✅ (4)_1761999784026.png";
+import dashboardDesign2 from "@assets/✅ (3)_1761999784026.png";
+import usWoundCare from "@assets/✅ (2)_1761999784027.png";
+import americanRoyal from "@assets/✅ (1)_1761999784027.png";
 
 export default function Portfolio() {
   const [filter, setFilter] = useState("All");
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Modern online store with seamless checkout and inventory management",
+      title: "American Royal",
+      description: "Premium luxury renovations website with modern design and compelling CTAs",
       category: "Web Development",
-      image: project1,
-      tools: ["Webflow", "JavaScript", "Stripe API"],
-      client: "RetailCo",
+      image: americanRoyal,
+      tools: ["React", "Tailwind CSS", "Responsive Design"],
+      client: "American Royal Renovations",
     },
     {
-      title: "Corporate Website",
-      description: "Professional business site with custom CMS and blog integration",
+      title: "US Wound Care",
+      description: "Healthcare website for mobile in-home wound care services in Texas, Oklahoma, and Louisiana",
       category: "Web Development",
-      image: project2,
-      tools: ["React", "Node.js", "Tailwind CSS"],
-      client: "Business Solutions Ltd",
+      image: usWoundCare,
+      tools: ["HTML", "CSS", "JavaScript"],
+      client: "US Wound Care",
     },
     {
-      title: "Brand Identity System",
-      description: "Complete visual identity including logo, colors, and brand guidelines",
-      category: "Design",
-      image: project3,
-      tools: ["Figma", "Illustrator", "Photoshop"],
-      client: "TechStart Inc",
-    },
-    {
-      title: "Mobile App UI/UX",
-      description: "Intuitive interface design for health and fitness tracking application",
-      category: "Design",
-      image: project4,
-      tools: ["Figma", "Adobe XD", "Protopie"],
-      client: "FitLife App",
-    },
-    {
-      title: "Restaurant Website",
-      description: "Beautiful menu showcase with online ordering capabilities",
+      title: "MIK Portfolio",
+      description: "Personal portfolio website showcasing comprehensive digital solutions and security expertise",
       category: "Web Development",
-      image: project1,
-      tools: ["Webflow", "JavaScript", "Google Maps API"],
-      client: "Taste of Karachi",
+      image: mikPortfolio,
+      tools: ["Next.js", "Tailwind CSS", "Framer Motion"],
+      client: "Muhammad Irshad Khan",
     },
     {
-      title: "Social Media Branding",
-      description: "Consistent visual templates and graphics for social platforms",
+      title: "Business Dashboard",
+      description: "Modern business dashboard with advanced analytics and vendor management",
+      category: "Web Development",
+      image: dashboardDesign,
+      tools: ["React", "Chart.js", "Material UI"],
+      client: "Enterprise Solutions",
+    },
+    {
+      title: "Analytics Dashboard",
+      description: "Clean dashboard interface for business leadership and metrics tracking",
+      category: "Web Development",
+      image: dashboardDesign2,
+      tools: ["React", "TypeScript", "D3.js"],
+      client: "Business Analytics Pro",
+    },
+    {
+      title: "Harli Studio",
+      description: "Elegant and sophisticated logo design for creative studio brand identity",
       category: "Design",
-      image: project3,
-      tools: ["Canva", "Photoshop", "Illustrator"],
-      client: "Digital Marketing Pro",
+      image: harliStudio,
+      tools: ["Illustrator", "Photoshop", "Logo Design"],
+      client: "Harli Studio",
+    },
+    {
+      title: "Kazoa Coffee",
+      description: "Fresh and modern coffee brand identity with distinctive logo design",
+      category: "Design",
+      image: kazoaCoffee,
+      tools: ["Illustrator", "Brand Identity", "Typography"],
+      client: "Kazoa Coffee",
+    },
+    {
+      title: "Domexo Burger",
+      description: "Playful and eye-catching restaurant logo for burger franchise",
+      category: "Design",
+      image: domexoBurger,
+      tools: ["Illustrator", "Logo Design", "Brand Assets"],
+      client: "Domexo Burger",
+    },
+    {
+      title: "Island Property",
+      description: "Sophisticated logo design for luxury property and real estate services",
+      category: "Design",
+      image: islandProperty,
+      tools: ["Illustrator", "Photoshop", "Logo Design"],
+      client: "Island Property",
+    },
+    {
+      title: "Spinx Jersey",
+      description: "Bold and dynamic sports brand logo for jersey and athletic wear",
+      category: "Design",
+      image: spinxJersey,
+      tools: ["Illustrator", "Brand Design", "Sports Graphics"],
+      client: "Spinx Jersey",
     },
   ];
 

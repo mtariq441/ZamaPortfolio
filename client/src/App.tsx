@@ -4,6 +4,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import PageLoader from "@/components/PageLoader";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import Home from "@/pages/Home";
 import About from "@/pages/About";
 import ServicesPage from "@/pages/Services";
@@ -30,6 +31,7 @@ function App() {
       <TooltipProvider>
         <PageLoader />
         <Toaster />
+        <WhatsAppButton />
         <Router />
       </TooltipProvider>
     </QueryClientProvider>

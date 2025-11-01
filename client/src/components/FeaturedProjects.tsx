@@ -4,42 +4,74 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
-import project1 from "@assets/generated_images/E-commerce_project_mockup_31d889c3.png";
-import project2 from "@assets/generated_images/Corporate_website_project_2a352df3.png";
-import project3 from "@assets/generated_images/Brand_identity_project_b3258a40.png";
-import project4 from "@assets/generated_images/Mobile_app_UI_project_967efc3f.png";
+import harliStudio from "@assets/✅ (17)_1761999784024.jpg";
+import kazoaCoffee from "@assets/✅ (16)_1761999784025.jpg";
+import domexoBurger from "@assets/✅ (15)_1761999784025.jpg";
+import islandProperty from "@assets/✅ (14)_1761999784025.jpg";
+import mikPortfolio from "@assets/✅ (5)_1761999784026.png";
+import dashboardDesign from "@assets/✅ (4)_1761999784026.png";
+import usWoundCare from "@assets/✅ (2)_1761999784027.png";
+import americanRoyal from "@assets/✅ (1)_1761999784027.png";
 
 export default function FeaturedProjects() {
   const [filter, setFilter] = useState("All");
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Modern online store with seamless checkout experience",
+      title: "American Royal",
+      description: "Premium luxury renovations website design",
       category: "Web Development",
-      image: project1,
-      tools: ["Webflow", "JavaScript", "Stripe"],
+      image: americanRoyal,
+      tools: ["React", "Tailwind", "Responsive Design"],
     },
     {
-      title: "Corporate Website",
-      description: "Professional business site with custom CMS integration",
+      title: "US Wound Care",
+      description: "Healthcare website for mobile in-home wound care services",
       category: "Web Development",
-      image: project2,
-      tools: ["React", "Node.js", "Tailwind"],
+      image: usWoundCare,
+      tools: ["HTML", "CSS", "JavaScript"],
     },
     {
-      title: "Brand Identity System",
-      description: "Complete visual identity for tech startup",
-      category: "Design",
-      image: project3,
-      tools: ["Figma", "Illustrator", "Photoshop"],
+      title: "MIK Portfolio",
+      description: "Personal portfolio website for digital solutions expert",
+      category: "Web Development",
+      image: mikPortfolio,
+      tools: ["Next.js", "Tailwind", "Framer Motion"],
     },
     {
-      title: "Mobile App UI/UX",
-      description: "Intuitive interface design for fitness app",
+      title: "Dashboard Design",
+      description: "Modern business dashboard with advanced analytics",
+      category: "Web Development",
+      image: dashboardDesign,
+      tools: ["React", "Chart.js", "Material UI"],
+    },
+    {
+      title: "Harli Studio",
+      description: "Elegant logo design for creative studio brand",
       category: "Design",
-      image: project4,
-      tools: ["Figma", "Adobe XD", "Protopie"],
+      image: harliStudio,
+      tools: ["Illustrator", "Photoshop", "Logo Design"],
+    },
+    {
+      title: "Kazoa Coffee",
+      description: "Fresh coffee brand identity and logo design",
+      category: "Design",
+      image: kazoaCoffee,
+      tools: ["Illustrator", "Brand Identity", "Typography"],
+    },
+    {
+      title: "Domexo Burger",
+      description: "Playful restaurant logo for burger franchise",
+      category: "Design",
+      image: domexoBurger,
+      tools: ["Illustrator", "Logo Design", "Brand Assets"],
+    },
+    {
+      title: "Island Property",
+      description: "Sophisticated logo for luxury property services",
+      category: "Design",
+      image: islandProperty,
+      tools: ["Illustrator", "Photoshop", "Logo Design"],
     },
   ];
 

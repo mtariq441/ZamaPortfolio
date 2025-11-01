@@ -4,7 +4,7 @@ import ContactForm from "@/components/ContactForm";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, MessageCircle } from "lucide-react";
-import { SiInstagram, SiLinkedin, SiBehance } from "react-icons/si";
+import { SiInstagram, SiLinkedin, SiBehance, SiFacebook, SiTiktok, SiFiverr, SiUpwork } from "react-icons/si";
 
 export default function Contact() {
   return (
@@ -39,11 +39,11 @@ export default function Contact() {
                     <div>
                       <p className="font-medium">Email</p>
                       <a
-                        href="mailto:info@zamaservices.com"
+                        href="mailto:muhammadtariqw33@gmail.com"
                         className="text-muted-foreground hover:text-primary transition-colors"
                         data-testid="link-email"
                       >
-                        info@zamaservices.com
+                        muhammadtariqw33@gmail.com
                       </a>
                     </div>
                   </div>
@@ -51,7 +51,14 @@ export default function Contact() {
                     <MessageCircle className="h-5 w-5 text-primary mt-1" />
                     <div>
                       <p className="font-medium">WhatsApp</p>
-                      <p className="text-muted-foreground">Available 9 AM - 6 PM PKT</p>
+                      <a
+                        href="https://wa.me/923120156535"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        +92 312 0156535
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -61,34 +68,44 @@ export default function Contact() {
                 <h3 className="font-bold text-xl mb-6 uppercase tracking-tight">Follow Us</h3>
                 <div className="space-y-3">
                   <a
-                    href="https://instagram.com"
+                    href="https://www.facebook.com/profile.php?viewas=100000686899395&id=100090680075347"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-all hover:translate-x-2"
-                    data-testid="link-contact-instagram"
+                    data-testid="link-contact-facebook"
                   >
-                    <SiInstagram className="h-5 w-5" />
-                    <span>Instagram</span>
+                    <SiFacebook className="h-5 w-5" />
+                    <span>Facebook</span>
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.tiktok.com/@zama_services?is_from_webapp=1&sender_device=pc"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-all hover:translate-x-2"
-                    data-testid="link-contact-linkedin"
+                    data-testid="link-contact-tiktok"
                   >
-                    <SiLinkedin className="h-5 w-5" />
-                    <span>LinkedIn</span>
+                    <SiTiktok className="h-5 w-5" />
+                    <span>TikTok</span>
                   </a>
                   <a
-                    href="https://behance.net"
+                    href="https://www.fiverr.com/s/Q7Kx082"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-all hover:translate-x-2"
-                    data-testid="link-contact-behance"
+                    data-testid="link-contact-fiverr"
                   >
-                    <SiBehance className="h-5 w-5" />
-                    <span>Behance</span>
+                    <SiFiverr className="h-5 w-5" />
+                    <span>Fiverr</span>
+                  </a>
+                  <a
+                    href="https://www.upwork.com/agencies/1983978129895215823/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-all hover:translate-x-2"
+                    data-testid="link-contact-upwork"
+                  >
+                    <SiUpwork className="h-5 w-5" />
+                    <span>Upwork</span>
                   </a>
                 </div>
               </Card>
@@ -101,7 +118,7 @@ export default function Contact() {
                 <Button
                   variant="secondary"
                   className="w-full"
-                  onClick={() => window.open("https://wa.me/", "_blank")}
+                  onClick={() => window.open("https://wa.me/923120156535?text=Hello!%20I'm%20interested%20in%20your%20services.", "_blank")}
                   data-testid="button-whatsapp"
                 >
                   <MessageCircle className="mr-2 h-4 w-4" />

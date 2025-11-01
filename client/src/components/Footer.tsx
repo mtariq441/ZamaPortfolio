@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { SiInstagram, SiLinkedin, SiBehance } from "react-icons/si";
+import { SiInstagram, SiLinkedin, SiBehance, SiFiverr, SiUpwork, SiFacebook, SiTiktok } from "react-icons/si";
 import logoImage from "@assets/ZAMA LOGO-1_1_1@500x_1761945924134.png";
 
 export default function Footer() {
@@ -62,7 +62,27 @@ export default function Footer() {
 
           <div>
             <h3 className="font-bold mb-4 uppercase tracking-wider">Connect</h3>
-            <div className="flex space-x-4">
+            <div className="grid grid-cols-4 gap-3 mb-4">
+              <a
+                href="https://www.facebook.com/profile.php?viewas=100000686899395&id=100090680075347"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-all hover:scale-125 hover:-translate-y-1"
+                data-testid="link-facebook"
+                aria-label="Facebook"
+              >
+                <SiFacebook className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@zama_services?is_from_webapp=1&sender_device=pc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-all hover:scale-125 hover:-translate-y-1"
+                data-testid="link-tiktok"
+                aria-label="TikTok"
+              >
+                <SiTiktok className="h-5 w-5" />
+              </a>
               <a
                 href="https://instagram.com"
                 target="_blank"
@@ -83,19 +103,29 @@ export default function Footer() {
               >
                 <SiLinkedin className="h-5 w-5" />
               </a>
+            </div>
+            <div className="space-y-2">
               <a
-                href="https://behance.net"
+                href="https://www.fiverr.com/s/Q7Kx082"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-all hover:scale-125 hover:-translate-y-1"
-                data-testid="link-behance"
-                aria-label="Behance"
+                className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-colors"
               >
-                <SiBehance className="h-5 w-5" />
+                <SiFiverr className="h-4 w-4" />
+                <span>Hire us on Fiverr</span>
+              </a>
+              <a
+                href="https://www.upwork.com/agencies/1983978129895215823/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
+                <SiUpwork className="h-4 w-4" />
+                <span>Hire us on Upwork</span>
               </a>
             </div>
             <p className="text-sm text-muted-foreground mt-4">
-              info@zamaservices.com
+              muhammadtariqw33@gmail.com
             </p>
           </div>
         </div>
