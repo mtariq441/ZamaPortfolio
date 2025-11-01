@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useLocation } from "wouter";
 import heroImage from "@assets/generated_images/Creative_agency_workspace_hero_ac65e607.png";
 
 export default function Hero() {
+  const [, setLocation] = useLocation();
+  
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
@@ -46,7 +49,7 @@ export default function Hero() {
               size="lg"
               variant="outline"
               className="rounded-full px-10 py-6 text-base font-semibold uppercase tracking-wider backdrop-blur-md bg-background/80 transition-all hover:scale-105 hover:shadow-2xl"
-              onClick={() => window.location.href = "/contact"}
+              onClick={() => setLocation("/contact")}
               data-testid="button-get-quote"
             >
               Get a Free Quote

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "wouter";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -14,6 +15,7 @@ import usWoundCare from "@assets/✅ (2)_1761999784027.png";
 import americanRoyal from "@assets/✅ (1)_1761999784027.png";
 
 export default function FeaturedProjects() {
+  const [, setLocation] = useLocation();
   const [filter, setFilter] = useState("All");
 
   const projects = [
@@ -142,7 +144,12 @@ export default function FeaturedProjects() {
         </div>
 
         <div className="text-center">
-          <Button size="lg" className="rounded-full px-10 py-6 text-base font-semibold uppercase tracking-wider bg-accent hover:bg-accent/90 text-accent-foreground transition-all hover:scale-105 hover:shadow-2xl group" data-testid="button-view-portfolio">
+          <Button 
+            size="lg" 
+            className="rounded-full px-10 py-6 text-base font-semibold uppercase tracking-wider bg-accent hover:bg-accent/90 text-accent-foreground transition-all hover:scale-105 hover:shadow-2xl group" 
+            onClick={() => setLocation("/portfolio")}
+            data-testid="button-view-portfolio"
+          >
             See Full Portfolio
             <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
           </Button>

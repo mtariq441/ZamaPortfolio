@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useLocation } from "wouter";
 
 export default function CTASection() {
+  const [, setLocation] = useLocation();
   return (
     <section className="py-24 md:py-40 bg-primary text-primary-foreground">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
@@ -15,7 +17,7 @@ export default function CTASection() {
           <Button
             size="lg"
             className="rounded-full px-12 py-7 mt-6 text-base font-semibold uppercase tracking-wider bg-accent hover:bg-accent/90 text-accent-foreground transition-all hover:scale-105 hover:shadow-2xl group"
-            onClick={() => window.location.href = "/contact"}
+            onClick={() => setLocation("/contact")}
             data-testid="button-start-project"
           >
             Start Your Project
