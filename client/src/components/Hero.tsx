@@ -27,11 +27,11 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-32 md:py-40">
         <div className="max-w-6xl mx-auto text-center space-y-8">
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-black tracking-tight uppercase leading-tight" data-testid="text-hero-headline">
-            WE BUILD DIGITAL
+            WE BUILD <span className="bg-accent text-white px-4 py-2 inline-block">DIGITAL</span>
             <br />
             EXPERIENCES THAT
             <br />
-            CONVERT
+            <span className="bg-primary text-white px-4 py-2 inline-block">CONVERT</span>
           </h1>
           
           <p className="text-lg md:text-xl leading-relaxed text-muted-foreground max-w-3xl mx-auto" data-testid="text-hero-subtext">
