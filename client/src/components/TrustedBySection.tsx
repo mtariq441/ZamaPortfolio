@@ -47,14 +47,14 @@ export default function TrustedBySection() {
   }, []);
 
   return (
-    <section className="relative w-full py-20 md:py-24 overflow-hidden bg-background">
+    <section className="relative w-full py-20 md:py-24 overflow-hidden bg-background" data-testid="section-trusted-by">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 mb-12">
-        <h2 className="text-center text-2xl md:text-3xl font-bold text-muted-foreground uppercase tracking-wider">
+        <h2 className="text-center text-2xl md:text-3xl font-bold text-muted-foreground uppercase tracking-wider" data-testid="text-trusted-by-heading">
           Trusted By Businesses Worldwide
         </h2>
       </div>
 
-      <div ref={bandsRef} className="relative w-full h-64 md:h-80 overflow-hidden">
+      <div ref={bandsRef} className="relative w-full h-64 md:h-80 overflow-hidden" data-testid="container-animated-bands">
         {bands.map((band, index) => (
           <div
             key={index}
