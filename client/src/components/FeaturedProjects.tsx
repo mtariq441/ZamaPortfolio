@@ -113,19 +113,21 @@ export default function FeaturedProjects() {
           {filteredProjects.map((project, index) => (
             <Card
               key={index}
-              className="overflow-hidden hover-elevate group cursor-pointer transition-all duration-300 hover:shadow-2xl hover:-translate-y-3 border-2"
+              className="overflow-hidden hover-elevate group cursor-pointer transition-all duration-500 hover:shadow-2xl hover:-translate-y-4 border-2 hover:border-accent/40 bg-gradient-to-br from-background to-muted/10 relative"
               data-testid={`card-project-${index}`}
             >
-              <div className="aspect-[4/3] overflow-hidden bg-muted/30">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/0 to-primary/0 group-hover:from-accent/5 group-hover:to-primary/5 transition-all duration-500 pointer-events-none"></div>
+              <div className="aspect-[4/3] overflow-hidden bg-muted/30 relative">
                 <img
                   src={project.image}
                   alt={project.title}
                   loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
-              <div className="p-8">
-                <h3 className="font-bold text-2xl mb-3 uppercase tracking-tight" data-testid={`text-project-title-${index}`}>
+              <div className="p-8 relative z-10">
+                <h3 className="font-bold text-2xl mb-3 uppercase tracking-tight group-hover:text-accent transition-colors duration-300" data-testid={`text-project-title-${index}`}>
                   {project.title}
                 </h3>
                 <p className="text-muted-foreground text-base mb-6 leading-relaxed">
@@ -146,12 +148,12 @@ export default function FeaturedProjects() {
         <div className="text-center">
           <Button 
             size="lg" 
-            className="rounded-full px-10 py-6 text-base font-semibold uppercase tracking-wider bg-accent hover:bg-accent/90 text-accent-foreground transition-all hover:scale-105 hover:shadow-2xl group" 
+            className="rounded-full px-10 py-6 text-base font-semibold uppercase tracking-wider bg-gradient-to-r from-accent to-primary hover:from-accent/90 hover:to-primary/90 text-white transition-all hover:scale-110 hover:shadow-2xl hover:shadow-accent/30 group" 
             onClick={() => setLocation("/portfolio")}
             data-testid="button-view-portfolio"
           >
             See Full Portfolio
-            <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-2" />
           </Button>
         </div>
       </div>

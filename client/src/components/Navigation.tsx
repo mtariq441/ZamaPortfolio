@@ -17,11 +17,11 @@ export default function Navigation() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-accent/10 bg-background/80 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="flex h-16 md:h-20 items-center justify-between gap-4">
-          <Link href="/" className="flex items-center transition-transform hover:scale-105 flex-shrink-0">
-            <img src={logoImage} alt="Zama Services Logo" className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto" />
+          <Link href="/" className="flex items-center transition-all duration-300 hover:scale-110 flex-shrink-0">
+            <img src={logoImage} alt="Zama Services Logo" className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto drop-shadow-lg" />
           </Link>
 
           <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
@@ -40,7 +40,7 @@ export default function Navigation() {
           </nav>
 
           <div className="hidden lg:flex flex-shrink-0">
-            <Button asChild className="rounded-full px-6 py-2 font-semibold uppercase tracking-wider bg-accent hover:bg-accent/90 text-accent-foreground transition-all hover:scale-105" data-testid="button-get-quote">
+            <Button asChild className="rounded-full px-6 py-2 font-semibold uppercase tracking-wider bg-gradient-to-r from-accent to-primary hover:from-accent/90 hover:to-primary/90 text-white transition-all hover:scale-110 hover:shadow-2xl hover:shadow-accent/30" data-testid="button-get-quote">
               <Link href="/contact">Get a Quote</Link>
             </Button>
           </div>

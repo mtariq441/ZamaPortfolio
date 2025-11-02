@@ -48,18 +48,19 @@ export default function Services() {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <Card key={index} className="p-10 md:p-12 hover-elevate transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border-2" data-testid={`card-service-${index}`}>
-                <div className="flex items-center space-x-5 mb-8">
-                  <div className={`p-4 rounded-xl ${service.iconBg}`}>
-                    <Icon className={`h-8 w-8 ${service.iconColor}`} />
+              <Card key={index} className="group p-10 md:p-12 hover-elevate transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 border-2 hover:border-accent/50 bg-gradient-to-br from-background to-muted/20 overflow-hidden relative" data-testid={`card-service-${index}`}>
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative z-10 flex items-center space-x-5 mb-8">
+                  <div className={`p-4 rounded-xl ${service.iconBg} transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg`}>
+                    <Icon className={`h-8 w-8 ${service.iconColor} transition-transform duration-500 group-hover:rotate-6`} />
                   </div>
                   <h3 className="font-display text-3xl md:text-4xl font-bold uppercase tracking-tight">
                     {service.title}
                   </h3>
                 </div>
-                <ul className="space-y-4">
+                <ul className="relative z-10 space-y-4">
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start" data-testid={`text-feature-${index}-${idx}`}>
+                    <li key={idx} className="flex items-start transition-all duration-300 hover:translate-x-2" data-testid={`text-feature-${index}-${idx}`}>
                       <span className="text-accent mr-3 text-xl font-bold">•</span>
                       <span className="text-muted-foreground text-lg">{feature}</span>
                     </li>
