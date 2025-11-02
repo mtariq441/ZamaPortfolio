@@ -1,6 +1,5 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
-import TrustedBySection from "@/components/TrustedBySection";
 import AboutMini from "@/components/AboutMini";
 import Services from "@/components/Services";
 import FeaturedProjects from "@/components/FeaturedProjects";
@@ -14,7 +13,6 @@ export default function Home() {
     <div className="min-h-screen">
       <Navigation />
       <Hero />
-      <TrustedBySection />
       <AboutMini />
       <Services />
       <FeaturedProjects />

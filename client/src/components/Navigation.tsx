@@ -17,11 +17,11 @@ export default function Navigation() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-accent/10 bg-background/80 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60 shadow-lg">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="flex h-16 md:h-20 items-center justify-between gap-4">
-          <Link href="/" className="flex items-center transition-all duration-300 hover:scale-110 flex-shrink-0">
-            <img src={logoImage} alt="Zama Services Logo" className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto drop-shadow-lg" />
+          <Link href="/" className="flex items-center transition-opacity hover:opacity-80 flex-shrink-0">
+            <img src={logoImage} alt="Zama Services Logo" className="h-8 sm:h-10 md:h-12 w-auto" />
           </Link>
 
           <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
@@ -29,8 +29,8 @@ export default function Navigation() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-semibold uppercase tracking-wider transition-all hover:text-primary relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full whitespace-nowrap ${
-                  location === link.href ? "text-primary after:w-full" : "text-muted-foreground"
+                className={`text-sm font-semibold uppercase tracking-wide transition-colors hover:text-accent whitespace-nowrap ${
+                  location === link.href ? "text-accent" : "text-foreground"
                 }`}
                 data-testid={`link-nav-${link.label.toLowerCase()}`}
               >
@@ -40,7 +40,7 @@ export default function Navigation() {
           </nav>
 
           <div className="hidden lg:flex flex-shrink-0">
-            <Button asChild className="rounded-full px-6 py-2 font-semibold uppercase tracking-wider bg-gradient-to-r from-accent to-primary hover:from-accent/90 hover:to-primary/90 text-white transition-all hover:scale-110 hover:shadow-2xl hover:shadow-accent/30" data-testid="button-get-quote">
+            <Button asChild className="rounded-full px-6 py-2 font-semibold uppercase tracking-wide bg-accent hover:bg-accent/90 text-white" data-testid="button-get-quote">
               <Link href="/contact">Get a Quote</Link>
             </Button>
           </div>
@@ -63,8 +63,8 @@ export default function Navigation() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium uppercase tracking-wider transition-all hover:text-primary hover:translate-x-2 ${
-                  location === link.href ? "text-primary" : "text-muted-foreground"
+                className={`text-sm font-medium uppercase tracking-wide transition-colors hover:text-accent ${
+                  location === link.href ? "text-accent" : "text-foreground"
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
                 data-testid={`link-mobile-${link.label.toLowerCase()}`}
@@ -72,7 +72,7 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <Button asChild className="w-full rounded-full font-semibold uppercase tracking-wider bg-accent hover:bg-accent/90 text-accent-foreground" data-testid="button-mobile-quote">
+            <Button asChild className="w-full rounded-full font-semibold uppercase tracking-wide bg-accent hover:bg-accent/90 text-white" data-testid="button-mobile-quote">
               <Link href="/contact">Get a Quote</Link>
             </Button>
           </nav>
