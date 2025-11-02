@@ -3,7 +3,6 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { useLocation } from "wouter";
 import { useState, useEffect } from "react";
 import heroImage from "@assets/generated_images/Creative_agency_workspace_hero_ac65e607.png";
-import AnimatedLogoBands from "./AnimatedLogoBands";
 import PremiumStats from "./PremiumStats";
 
 export default function Hero() {
@@ -35,9 +34,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-br from-background/98 via-background/95 to-background/90" />
       </div>
 
-      <AnimatedLogoBands />
-
-      <div className="relative z-30 max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-32 md:py-40">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-32 md:py-40">
         <div className="max-w-6xl mx-auto text-center space-y-12">
           <div className={`space-y-6 ${prefersReducedMotion ? '' : 'transform transition-all duration-1000'} ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-accent/20 to-primary/20 border border-accent/30 backdrop-blur-sm">
