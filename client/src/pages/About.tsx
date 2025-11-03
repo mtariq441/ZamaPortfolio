@@ -4,7 +4,7 @@ import TeamMemberCard from "@/components/TeamMemberCard";
 import { Card } from "@/components/ui/card";
 import { Target, Eye, Sparkles } from "lucide-react";
 
-import tariqImage from "@assets/Untitled design (16)_1762168396966.jpg";
+import tariqImage from "@assets/Untitled design (20)_1762169388709.jpg";
 import ubaidImage from "@assets/Untitled design (15)_1762168237403.jpg";
 import wahidImage from "@assets/Untitled design (19)_1762169025570.jpg";
 import ibrahimImage from "@assets/Untitled design (18)_1762168713462.jpg";
