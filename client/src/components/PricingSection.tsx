@@ -74,23 +74,9 @@ export default function PricingSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto pt-6">
           {pricingPackages.map((pkg, index) => (
-            <Card
-              key={index}
-              className={`relative transition-all duration-300 hover:shadow-2xl md:hover:-translate-y-2 overflow-hidden border-2 ${
-                pkg.popular
-                  ? "border-accent shadow-xl md:scale-105 bg-gradient-to-br from-accent/5 to-transparent"
-                  : index === 0
-                  ? "border-primary/20 hover:border-primary/40"
-                  : "border-primary/20 hover:border-primary/40"
-              }`}
-              data-testid={`card-pricing-home-${index}`}
-            >
-              {pkg.popular && (
-                <div className="absolute top-0 right-0 left-0 h-1 bg-gradient-to-r from-accent via-accent/80 to-accent"></div>
-              )}
-              
+            <div key={index} className="relative">
               {pkg.popular && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
                   <div className="bg-accent text-white px-3 sm:px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide flex items-center gap-1 shadow-lg">
@@ -99,6 +85,20 @@ export default function PricingSection() {
                   </div>
                 </div>
               )}
+              
+              <Card
+                className={`relative transition-all duration-300 hover:shadow-2xl md:hover:-translate-y-2 border-2 h-full ${
+                  pkg.popular
+                    ? "border-accent shadow-xl md:scale-105 bg-gradient-to-br from-accent/5 to-transparent"
+                    : index === 0
+                    ? "border-primary/20 hover:border-primary/40"
+                    : "border-primary/20 hover:border-primary/40"
+                }`}
+                data-testid={`card-pricing-home-${index}`}
+              >
+                {pkg.popular && (
+                  <div className="absolute top-0 right-0 left-0 h-1 bg-gradient-to-r from-accent via-accent/80 to-accent rounded-t-lg"></div>
+                )}
 
               <CardHeader className={`text-center pb-4 sm:pb-6 pt-8 sm:pt-10 px-4 sm:px-6 ${pkg.popular ? "bg-gradient-to-b from-accent/10 to-transparent" : ""}`}>
                 <div className={`inline-flex mx-auto mb-4 p-4 rounded-2xl ${
@@ -173,6 +173,7 @@ export default function PricingSection() {
                 </Button>
               </CardContent>
             </Card>
+            </div>
           ))}
         </div>
 
