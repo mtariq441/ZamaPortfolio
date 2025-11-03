@@ -6,7 +6,7 @@ import { Target, Eye, Sparkles } from "lucide-react";
 
 import tariqImage from "@assets/Untitled design (16)_1762168396966.jpg";
 import ubaidImage from "@assets/Untitled design (15)_1762168237403.jpg";
-import wahidImage from "@assets/Wahid Ullah_1762167134792.jpg";
+import wahidImage from "@assets/Untitled design (17)_1762168472067.jpg";
 import ibrahimImage from "@assets/generated_images/Team_member_Muhammad_Ibrahim_73e4a6e7.png";
 
 export default function About() {
