@@ -76,7 +76,12 @@ export default function PricingSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto pt-6">
           {pricingPackages.map((pkg, index) => (
-            <div key={index} className="relative">
+            <div 
+              key={index} 
+              className={`relative transition-all duration-300 md:hover:-translate-y-2 ${
+                pkg.popular ? "md:scale-105" : ""
+              }`}
+            >
               {pkg.popular && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
                   <div className="bg-accent text-white px-3 sm:px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide flex items-center gap-1 shadow-lg">
@@ -87,9 +92,9 @@ export default function PricingSection() {
               )}
               
               <Card
-                className={`relative transition-all duration-300 hover:shadow-2xl md:hover:-translate-y-2 border-2 h-full ${
+                className={`relative transition-all duration-300 hover:shadow-2xl border-2 h-full ${
                   pkg.popular
-                    ? "border-accent shadow-xl md:scale-105 bg-gradient-to-br from-accent/5 to-transparent"
+                    ? "border-accent shadow-xl bg-gradient-to-br from-accent/5 to-transparent"
                     : index === 0
                     ? "border-primary/20 hover:border-primary/40"
                     : "border-primary/20 hover:border-primary/40"
