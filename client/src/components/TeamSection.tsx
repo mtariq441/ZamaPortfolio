@@ -2,7 +2,7 @@ import TeamMemberCard from "@/components/TeamMemberCard";
 
 import tariqImage from "@assets/Untitled design (16)_1762168396966.jpg";
 import ubaidImage from "@assets/Untitled design (15)_1762168237403.jpg";
-import wahidImage from "@assets/Untitled design (17)_1762168472067.jpg";
+import wahidImage from "@assets/Untitled design (19)_1762169025570.jpg";
 import ibrahimImage from "@assets/Untitled design (18)_1762168713462.jpg";
 
 export default function TeamSection() {
