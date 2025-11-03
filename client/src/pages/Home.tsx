@@ -4,6 +4,7 @@ import AboutMini from "@/components/AboutMini";
 import Services from "@/components/Services";
 import FeaturedProjects from "@/components/FeaturedProjects";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import TeamSection from "@/components/TeamSection";
 import Testimonials from "@/components/Testimonials";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
@@ -17,6 +18,7 @@ export default function Home() {
       <Services />
       <FeaturedProjects />
       <WhyChooseUs />
+      <TeamSection />
       <Testimonials />
       <CTASection />
       <Footer />
