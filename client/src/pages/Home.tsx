@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import AboutMini from "@/components/AboutMini";
 import Services from "@/components/Services";
+import PricingSection from "@/components/PricingSection";
 import FeaturedProjects from "@/components/FeaturedProjects";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import TeamSection from "@/components/TeamSection";
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <AboutMini />
       <Services />
+      <PricingSection />
       <FeaturedProjects />
       <WhyChooseUs />
       <TeamSection />
