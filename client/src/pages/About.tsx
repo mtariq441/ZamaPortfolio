@@ -5,9 +5,9 @@ import { Card } from "@/components/ui/card";
 import { Target, Eye, Sparkles } from "lucide-react";
 
 import tariqImage from "@assets/Untitled design (21)_1762172773892.jpg";
-import ubaidImage from "@assets/Untitled design (15)_1762168237403.jpg";
-import wahidImage from "@assets/Untitled design (19)_1762169025570.jpg";
-import ibrahimImage from "@assets/Untitled design (18)_1762168713462.jpg";
+import ubaidImage from "@assets/Untitled design (22)_1762173249001.jpg";
+import wahidImage from "@assets/Untitled design (23)_1762173258836.jpg";
+import ibrahimImage from "@assets/Untitled design (24)_1762173266962.jpg";
 
 export default function About() {
   const team = [
