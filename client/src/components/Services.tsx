@@ -1,8 +1,10 @@
 import { Code2, Palette, Search, Bot, Settings, Rocket } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useLocation } from "wouter";
 
 export default function Services() {
+  const [, setLocation] = useLocation();
   const services = [
     {
       title: "Web Development",
@@ -71,7 +73,13 @@ export default function Services() {
         </div>
 
         <div className="text-center">
-          <Button size="lg" variant="outline" className="rounded-full px-10 py-6 text-base font-semibold uppercase tracking-wide border-2" data-testid="button-explore-services">
+          <Button 
+            size="lg" 
+            variant="outline" 
+            className="rounded-full px-10 py-6 text-base font-semibold uppercase tracking-wide border-2" 
+            onClick={() => setLocation("/services")}
+            data-testid="button-explore-services"
+          >
             Explore All Services
           </Button>
         </div>
