@@ -63,24 +63,24 @@ export default function PricingSection() {
   };
 
   return (
-    <section className="py-24 bg-gradient-to-b from-muted/30 to-background">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-        <div className="text-center mb-16">
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 uppercase tracking-tight" data-testid="text-pricing-title">
+    <section className="py-12 md:py-24 bg-gradient-to-b from-muted/30 to-background">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-16">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 uppercase tracking-tight" data-testid="text-pricing-title">
             Simple Pricing
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
             Choose the package that fits your needs. No hidden fees, transparent pricing.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
           {pricingPackages.map((pkg, index) => (
             <Card
               key={index}
-              className={`relative transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 overflow-hidden border-2 ${
+              className={`relative transition-all duration-300 hover:shadow-2xl md:hover:-translate-y-2 overflow-hidden border-2 ${
                 pkg.popular
-                  ? "border-accent shadow-xl scale-105 bg-gradient-to-br from-accent/5 to-transparent"
+                  ? "border-accent shadow-xl md:scale-105 bg-gradient-to-br from-accent/5 to-transparent"
                   : index === 0
                   ? "border-primary/20 hover:border-primary/40"
                   : "border-primary/20 hover:border-primary/40"
@@ -93,14 +93,14 @@ export default function PricingSection() {
               
               {pkg.popular && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
-                  <div className="bg-accent text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide flex items-center gap-1 shadow-lg">
+                  <div className="bg-accent text-white px-3 sm:px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide flex items-center gap-1 shadow-lg">
                     <Star className="h-3 w-3 fill-current" />
                     Most Popular
                   </div>
                 </div>
               )}
 
-              <CardHeader className={`text-center pb-6 pt-10 ${pkg.popular ? "bg-gradient-to-b from-accent/10 to-transparent" : ""}`}>
+              <CardHeader className={`text-center pb-4 sm:pb-6 pt-8 sm:pt-10 px-4 sm:px-6 ${pkg.popular ? "bg-gradient-to-b from-accent/10 to-transparent" : ""}`}>
                 <div className={`inline-flex mx-auto mb-4 p-4 rounded-2xl ${
                   pkg.color === "accent" 
                     ? "bg-gradient-to-br from-accent/20 to-accent/10" 
@@ -130,12 +130,12 @@ export default function PricingSection() {
                   </div>
                 </div>
                 
-                <CardTitle className="text-2xl mb-2 font-bold" data-testid={`text-package-home-title-${index}`}>
+                <CardTitle className="text-xl sm:text-2xl mb-2 font-bold" data-testid={`text-package-home-title-${index}`}>
                   {pkg.title}
                 </CardTitle>
-                <p className="text-sm text-muted-foreground mb-4">{pkg.description}</p>
-                <div className="mt-4">
-                  <span className={`text-5xl font-bold ${pkg.color === "accent" ? "text-accent" : "text-primary"}`} data-testid={`text-package-home-price-${index}`}>
+                <p className="text-sm text-muted-foreground mb-3 sm:mb-4 px-2">{pkg.description}</p>
+                <div className="mt-3 sm:mt-4">
+                  <span className={`text-4xl sm:text-5xl font-bold ${pkg.color === "accent" ? "text-accent" : "text-primary"}`} data-testid={`text-package-home-price-${index}`}>
                     {pkg.price.split("/")[0]}
                   </span>
                   {pkg.price.includes("/") && (
@@ -144,7 +144,7 @@ export default function PricingSection() {
                 </div>
               </CardHeader>
 
-              <CardContent className="space-y-6 pb-8">
+              <CardContent className="space-y-4 sm:space-y-6 pb-6 sm:pb-8 px-4 sm:px-6">
                 <ul className="space-y-3">
                   {pkg.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-3">
@@ -176,8 +176,8 @@ export default function PricingSection() {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
-          <p className="text-muted-foreground text-lg">
+        <div className="mt-12 md:mt-16 text-center px-4">
+          <p className="text-muted-foreground text-base sm:text-lg">
             Need a custom package?{" "}
             <a href="/contact" className="text-accent hover:text-accent/80 font-semibold hover:underline transition-colors">
               Contact us
