@@ -18,7 +18,7 @@ export default function About() {
     },
     {
       name: "Muhammad Ubaid",
-      role: "Frontend Developer & Logo Designer",
+      role: "Frontend Developer | Brand Designer",
       image: ubaidImage,
     },
     {
