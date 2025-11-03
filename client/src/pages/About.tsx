@@ -4,7 +4,7 @@ import TeamMemberCard from "@/components/TeamMemberCard";
 import { Card } from "@/components/ui/card";
 import { Target, Eye, Sparkles } from "lucide-react";
 
-import tariqImage from "@assets/generated_images/Team_member_Muhammad_Tariq_cd319a3a.png";
+import tariqImage from "@assets/Untitled design (14)_1762167613183.jpg";
 import ubaidImage from "@assets/M.Ubaid_1762167228593.jpg";
 import wahidImage from "@assets/Wahid Ullah_1762167134792.jpg";
 import ibrahimImage from "@assets/generated_images/Team_member_Muhammad_Ibrahim_73e4a6e7.png";
@@ -13,7 +13,7 @@ export default function About() {
   const team = [
     {
       name: "Muhammad Tariq",
-      role: "Webflow Developer & Team Lead",
+      role: "Full Stack Developer & Project Manager",
       image: tariqImage,
     },
     {
