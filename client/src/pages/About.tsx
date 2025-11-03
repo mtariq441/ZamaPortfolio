@@ -7,7 +7,7 @@ import { Target, Eye, Sparkles } from "lucide-react";
 import tariqImage from "@assets/Untitled design (16)_1762168396966.jpg";
 import ubaidImage from "@assets/Untitled design (15)_1762168237403.jpg";
 import wahidImage from "@assets/Untitled design (17)_1762168472067.jpg";
-import ibrahimImage from "@assets/generated_images/Team_member_Muhammad_Ibrahim_73e4a6e7.png";
+import ibrahimImage from "@assets/Untitled design (18)_1762168713462.jpg";
 
 export default function About() {
   const team = [
@@ -28,7 +28,7 @@ export default function About() {
     },
     {
       name: "Muhammad Ibrahim",
-      role: "UI/UX & Marketing Assistant",
+      role: "Full Stack .NET Developer",
       image: ibrahimImage,
     },
   ];
