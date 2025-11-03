@@ -33,7 +33,7 @@ export default function TeamSection() {
     <section className="py-24 bg-muted/30">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
         <div className="text-center mb-16">
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6" data-testid="text-team-title">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 uppercase tracking-tight" data-testid="text-team-title">
             Meet Our Team
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
