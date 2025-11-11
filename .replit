@@ -16,16 +16,16 @@ localPort = 5000
 externalPort = 80
 
 [[ports]]
-localPort = 36335
-externalPort = 4200
-
-[[ports]]
 localPort = 37985
 externalPort = 5000
 
 [[ports]]
 localPort = 38143
 externalPort = 8008
+
+[[ports]]
+localPort = 40543
+externalPort = 4200
 
 [[ports]]
 localPort = 40611
@@ -82,6 +82,9 @@ author = "agent"
 task = "shell.exec"
 args = "npm run dev"
 waitForPort = 5000
+
+[workflows.workflow.metadata]
+outputType = "webview"
 
 [agent]
 expertMode = true
