@@ -18,7 +18,7 @@ export default function About() {
               About Zama Services
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Eight creative minds from Pakistan, united by a passion for digital excellence
+              Nine creative minds from Pakistan, united by a passion for digital excellence
             </p>
           </div>
 
@@ -32,7 +32,7 @@ export default function About() {
                   <h2 className="font-display text-3xl font-bold mb-4">Our Story</h2>
                   <p className="text-muted-foreground leading-relaxed">
                     Zama Services was born from a simple idea: combining diverse creative talents 
-                    to deliver exceptional digital solutions. Our eight-member team brings together 
+                    to deliver exceptional digital solutions. Our nine-member team brings together 
                     expertise in web development, design, and user experience to create impactful 
                     projects that drive real results.
                   </p>

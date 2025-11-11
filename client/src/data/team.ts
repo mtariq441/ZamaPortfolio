@@ -4,6 +4,9 @@ import wahidImage from "@assets/Untitled design (22)_1762173249001.jpg";
 import ibrahimImage from "@assets/Untitled design (24)_1762173266962.jpg";
 import shahidImage from "@assets/Untitled design (25)_1762864355511.jpg";
 import shaistaImage from "@assets/Untitled design (27)_1762870850212.jpg";
+import ziaImage from "@assets/generated_images/Zia_Ullah_professional_headshot_d86effbf.png";
+import noorImage from "@assets/generated_images/Noor_Habib_professional_headshot_8385c2e3.png";
+import aleemImage from "@assets/generated_images/Aleem_Zada_professional_headshot_f3ed384c.png";
 
 export const teamMembers = [
   {
@@ -14,12 +17,12 @@ export const teamMembers = [
   {
     name: "Noor Habib",
     role: "Senior Software Engineer",
-    image: tariqImage,
+    image: noorImage,
   },
   {
     name: "Aleem Zada",
-    role: "Senior Laravel Developer",
-    image: tariqImage,
+    role: "Software Engineer | Laravel Developer",
+    image: aleemImage,
   },
   {
     name: "Muhammad Ibrahim",
@@ -30,6 +33,11 @@ export const teamMembers = [
     name: "Muhammad Ubaid",
     role: "Frontend Developer | Brand Designer",
     image: ubaidImage,
+  },
+  {
+    name: "Zia Ullah",
+    role: "Project Organizer | Client Communicator",
+    image: ziaImage,
   },
   {
     name: "Wahid Ullah",
