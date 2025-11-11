@@ -11,10 +11,10 @@ export default function TeamSection() {
             Meet Our Team
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Five creative minds from Pakistan, united by a passion for digital excellence
+            Eight creative minds from Pakistan, united by a passion for digital excellence
           </p>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
             <TeamMemberCard
               key={index}

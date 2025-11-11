@@ -3,12 +3,28 @@ import ubaidImage from "@assets/Untitled design (23)_1762173258836.jpg";
 import wahidImage from "@assets/Untitled design (22)_1762173249001.jpg";
 import ibrahimImage from "@assets/Untitled design (24)_1762173266962.jpg";
 import shahidImage from "@assets/Untitled design (25)_1762864355511.jpg";
+import shaistaImage from "@assets/Untitled design (27)_1762870850212.jpg";
 
 export const teamMembers = [
   {
     name: "Muhammad Tariq",
     role: "Certified Full Stack Engineer | Project Manager",
     image: tariqImage,
+  },
+  {
+    name: "Noor Habib",
+    role: "Senior Software Engineer",
+    image: tariqImage,
+  },
+  {
+    name: "Aleem Zada",
+    role: "Senior Laravel Developer",
+    image: tariqImage,
+  },
+  {
+    name: "Muhammad Ibrahim",
+    role: "Full Stack .NET Developer",
+    image: ibrahimImage,
   },
   {
     name: "Muhammad Ubaid",
@@ -21,13 +37,13 @@ export const teamMembers = [
     image: wahidImage,
   },
   {
-    name: "Muhammad Ibrahim",
-    role: "Full Stack .NET Developer",
-    image: ibrahimImage,
-  },
-  {
     name: "Shahid Khan",
     role: "Senior Graphic Designer | UI UX Designer",
     image: shahidImage,
+  },
+  {
+    name: "Shaista",
+    role: "WordPress | CMS Expert",
+    image: shaistaImage,
   },
 ];
