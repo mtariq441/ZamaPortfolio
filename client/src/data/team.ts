@@ -7,7 +7,7 @@ import shahidImage from "@assets/Untitled design (25)_1762864355511.jpg";
 export const teamMembers = [
   {
     name: "Muhammad Tariq",
-    role: "Full Stack Developer & Project Manager",
+    role: "Certified Full Stack Engineer | Project Manager",
     image: tariqImage,
   },
   {
